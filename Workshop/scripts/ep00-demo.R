@@ -17,7 +17,6 @@ library(ggplot2)
 
 # Generate a Plot 
 ggplot(diamonds) + 
-  theme_dark() +
   geom_point(aes(x=carat, y=price, color=cut)) +
   geom_smooth(aes(x=carat, y=price))
 
